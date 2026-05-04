@@ -1,214 +1,376 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>About Us | SteelCraft Construction Chennai</title>
-    <meta name="description"
-        content="Learn about SteelCraft Construction - 25+ years of experience in building residential and commercial projects in Chennai.">
+<title>About Us | SteelCraft Construction</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&family=Barlow+Condensed:wght@400;600;700&display=swap"
-        rel="stylesheet">
+<!-- FONTS -->
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+<!-- BOOTSTRAP + ICONS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css">
+<style>
+:root{
+--gold:#d4af37;
+--dark:#0f172a;
+--dark2:#111827;
+--card:#1e293b;
+--text:#cbd5e1;
+}
+
+/* GLOBAL */
+body{
+background:var(--dark);
+color:#fff;
+font-family:'Barlow',sans-serif;
+}
+
+.section{padding:90px 0;}
+.title{
+font-family:'Bebas Neue';
+font-size:2.8rem;
+}
+.title span{color:var(--gold);}
+.label{
+color:var(--gold);
+letter-spacing:2px;
+font-size:.8rem;
+}
+
+/* NAVBAR */
+.navbar{background:var(--dark);}
+.navbar-brand{
+font-family:'Bebas Neue';
+font-size:1.8rem;
+color:#fff;
+}
+.navbar-brand span{color:var(--gold);}
+
+/* HERO */
+.hero{
+background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.7)),
+url('https://images.unsplash.com/photo-1503387762-592deb58ef4e');
+background-size:cover;
+background-position:center;
+padding:140px 0;
+text-align:center;
+}
+
+/* CARDS */
+.card-box{
+background:var(--card);
+padding:25px;
+border-radius:8px;
+height:100%;
+transition:.3s;
+}
+.card-box:hover{transform:translateY(-5px);}
+
+/* TIMELINE */
+.timeline{
+position:relative;
+padding-left:30px;
+}
+.timeline::before{
+content:"";
+position:absolute;
+left:0;
+top:0;
+width:2px;
+height:100%;
+background:var(--gold);
+}
+.timeline-item{
+position:relative;
+margin-bottom:35px;
+}
+.timeline-item::before{
+content:"";
+position:absolute;
+left:-7px;
+top:5px;
+width:12px;
+height:12px;
+background:var(--gold);
+border-radius:50%;
+}
+.timeline-item h6{
+color:var(--gold);
+}
+.timeline-item p{
+color:#e2e8f0; /* FIXED VISIBILITY */
+}
+
+/* CTA */
+.cta{
+background:var(--gold);
+color:#000;
+padding:60px 0;
+text-align:center;
+}
+.cta a{
+background:#000;
+color:#fff;
+padding:10px 20px;
+text-decoration:none;
+display:inline-block;
+margin-top:10px;
+}
+
+/* FOOTER */
+.footer{
+background:#020617;
+padding:60px 0 20px;
+}
+
+.footer-logo{
+font-family:'Bebas Neue';
+font-size:2rem;
+color:#fff;
+}
+.footer-logo span{color:var(--gold);}
+
+.footer-title{
+color:#fff;
+margin-bottom:15px;
+}
+
+.footer-text,
+.footer p{
+color:#cbd5e1; /* FIXED */
+font-size:0.95rem;
+}
+
+.footer a{
+display:block;
+color:#cbd5e1;
+text-decoration:none;
+margin-bottom:8px;
+transition:.3s;
+}
+.footer a:hover{
+color:var(--gold);
+padding-left:5px;
+}
+
+.footer i{
+color:var(--gold);
+margin-right:8px;
+}
+
+.footer-social a{
+display:inline-block;
+margin-right:12px;
+font-size:1.2rem;
+}
+
+.footer-divider{
+border-color:#1e293b;
+margin:30px 0;
+}
+
+.footer-bottom{
+text-align:center;
+color:#94a3b8;
+font-size:0.9rem;
+border-top:1px solid #1e293b;
+padding-top:15px;
+}
+</style>
 </head>
 
 <body>
 
 <!-- NAVBAR -->
-<nav id="navbar" class="navbar navbar-expand-lg">
-    <div class="container">
-        <a class="navbar-brand" href="index.html">STEEL<span>CRAFT</span></a>
-
-        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-            <span style="font-size:1.5rem; color:var(--gold);"><i class="bi bi-list"></i></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navMenu">
-            <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
-
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link active-page" href="about.html">About Us</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="services.html">Services</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="projects.html">Projects</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="testimonials.html">Testimonials</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="blog.html">Blog</a>
-                </li>
-
-                <li class="nav-item ms-lg-2">
-                    <a class="nav-link btn-quote" href="contact.html">Get Quote</a>
-                </li>
-
-            </ul>
-        </div>
-    </div>
+<nav class="navbar navbar-expand-lg">
+<div class="container">
+<a class="navbar-brand" href="#">STEEL<span>CRAFT</span></a>
+</div>
 </nav>
 
-<!-- ABOUT SECTION -->
-<div id="page-about" class="page-section active">
+<!-- HERO -->
+<section class="hero">
+<div class="container">
+<h1 class="title">ABOUT <span>STEELCRAFT</span></h1>
+<p class="mt-3">Building trust and excellence since 1999</p>
+</div>
+</section>
 
-    <div style="height:80px;background:var(--dark);"></div>
+<!-- STORY -->
+<section class="section">
+<div class="container">
+<div class="row align-items-center g-5">
 
-    <section class="section-pad">
-        <div class="container">
+<div class="col-lg-6">
+<img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12" class="img-fluid rounded">
+</div>
 
-            <div class="row align-items-center g-5">
+<div class="col-lg-6">
+<span class="label">Our Story</span>
+<h2 class="title">25+ YEARS OF <span>EXCELLENCE</span></h2>
 
-                <!-- IMAGE -->
-                <div class="col-lg-5 fade-in">
-                    <div class="about-img-wrap">
+<p style="color:var(--text);line-height:1.8;">
+SteelCraft Construction has successfully completed over 500 residential and commercial projects across Chennai.
+</p>
 
-                        <div class="about-badge">
-                            <div class="about-badge-num">25</div>
-                            <div class="about-badge-text">Years of<br>Excellence</div>
-                        </div>
+<p style="color:var(--text);line-height:1.8;">
+We are committed to quality, transparency, and delivering projects on time with precision engineering.
+</p>
 
-                        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80"
-                            class="about-img-main" alt="SteelCraft Construction">
+<p style="color:var(--text);line-height:1.8;">
+Every project is built with customer-first planning, sustainable materials, and an expert team that turns design into reality.
+</p>
 
-                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=400&q=80"
-                            class="about-img-accent d-none d-lg-block" alt="Construction detail">
-
-                    </div>
-                </div>
-
-                <!-- TEXT -->
-                <div class="col-lg-7 fade-in">
-
-                    <span class="section-label">Our Story</span>
-
-                    <h2 class="section-title">BUILDING CHENNAI<br>SINCE <span>1999</span></h2>
-
-                    <div class="divider"></div>
-
-                    <p style="color:var(--text-muted); line-height:1.9;">
-                        Founded in 1999 by K. Suresh Kumar, SteelCraft Construction started with a vision to deliver
-                        high-quality construction at honest pricing. Today, we have completed 500+ projects across
-                        Chennai.
-                    </p>
-
-                    <p style="color:var(--text-muted); line-height:1.9;">
-                        We believe every building tells a story. That’s why we treat every project as if it were our own.
-                    </p>
-
-                    <div class="row g-3 mt-3">
-
-                        <div class="col-6">
-                            <div style="background:var(--dark-3);padding:1.2rem;text-align:center;">
-                                <div style="font-family:'Bebas Neue';font-size:2.8rem;color:var(--gold);">500+</div>
-                                <div style="font-size:0.8rem;color:var(--text-muted);">Projects Completed</div>
-                            </div>
-                        </div>
-
-                        <div class="col-6">
-                            <div style="background:var(--dark-3);padding:1.2rem;text-align:center;">
-                                <div style="font-family:'Bebas Neue';font-size:2.8rem;color:var(--gold);">120+</div>
-                                <div style="font-size:0.8rem;color:var(--text-muted);">Team Members</div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-    </section>
-
-    <!-- PROCESS -->
-    <section class="section-pad" style="background:var(--dark-2);">
-        <div class="container">
-
-            <div class="row mb-5 fade-in">
-                <div class="col-lg-6">
-                    <span class="section-label">How We Work</span>
-                    <h2 class="section-title">OUR BUILD<br><span>PROCESS</span></h2>
-                    <div class="divider"></div>
-                </div>
-            </div>
-
-            <div class="row g-4">
-
-                <div class="col-lg-6 fade-in">
-                    <div class="process-step">
-                        <div class="process-num">01</div>
-                        <div>
-                            <div class="process-title">Consultation & Site Visit</div>
-                            <p class="process-desc">We understand your requirements and visit your site.</p>
-                        </div>
-                    </div>
-
-                    <div class="process-step">
-                        <div class="process-num">02</div>
-                        <div>
-                            <div class="process-title">Design & Planning</div>
-                            <p class="process-desc">Architectural drawings and planning.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-6 fade-in">
-                    <div class="process-step">
-                        <div class="process-num">03</div>
-                        <div>
-                            <div class="process-title">Construction</div>
-                            <p class="process-desc">Execution with quality materials and engineers.</p>
-                        </div>
-                    </div>
-
-                    <div class="process-step">
-                        <div class="process-num">04</div>
-                        <div>
-                            <div class="process-title">Handover</div>
-                            <p class="process-desc">Final delivery with quality assurance.</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-    </section>
+<p style="color:var(--text);line-height:1.8;">
+From modern homes to commercial interiors, our approach combines craftsmanship, safety, and smart construction technology.
+</p>
 
 </div>
 
-<!-- FOOTER -->
-<footer>
-    <div class="container">
-        <div class="footer-bottom">
-            <div class="footer-copy">
-                © 2025 SteelCraft Construction Pvt. Ltd.
-            </div>
-        </div>
-    </div>
-</footer>
+</div>
+</div>
+</section>
 
-<!-- SCRIPTS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script src="script.js"></script>
+<!-- VALUES -->
+<section class="section" style="background:var(--dark2);">
+<div class="container">
+<span class="label">What Drives Us</span>
+<h2 class="title mb-5">CORE <span>VALUES</span></h2>
+<div class="row g-4">
+<div class="col-md-4">
+<div class="card-box">
+<h5>Integrity</h5>
+<p style="color:#cbd5e1;line-height:1.8;">We keep every promise, maintain transparent communication, and build long-term trust with clients and partners.</p>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card-box">
+<h5>Innovation</h5>
+<p style="color:#cbd5e1;line-height:1.8;">We adopt modern techniques, efficient planning, and sustainable solutions to deliver projects with excellence.</p>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card-box">
+<h5>Safety</h5>
+<p style="color:#cbd5e1;line-height:1.8;">Safety is embedded in every phase of our work, ensuring reliable structures and secure construction sites.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- STATS -->
+<section class="section" style="background:var(--dark2);">
+<div class="container text-center">
+<div class="row">
+<div class="col-md-3"><h2 style="color:var(--gold)">500+</h2><p>Projects</p></div>
+<div class="col-md-3"><h2 style="color:var(--gold)">25+</h2><p>Years</p></div>
+<div class="col-md-3"><h2 style="color:var(--gold)">120+</h2><p>Team</p></div>
+<div class="col-md-3"><h2 style="color:var(--gold)">100%</h2><p>Satisfaction</p></div>
+</div>
+</div>
+</section>
+
+<!-- TIMELINE -->
+<section class="section">
+<div class="container">
+<span class="label">Our Journey</span>
+<h2 class="title mb-5">COMPANY <span>TIMELINE</span></h2>
+
+<div class="timeline">
+<div class="timeline-item">
+<h6>1999</h6>
+<p>Company founded with small residential projects.</p>
+</div>
+<div class="timeline-item">
+<h6>2008</h6>
+<p>Expanded into commercial construction.</p>
+</div>
+<div class="timeline-item">
+<h6>2018</h6>
+<p>Completed 300+ projects milestone.</p>
+</div>
+<div class="timeline-item">
+<h6>2022</h6>
+<p>Introduced green construction practices for modern developments.</p>
+</div>
+<div class="timeline-item">
+<h6>2025</h6>
+<p>Recognized as a trusted builder in Chennai.</p>
+</div>
+<div class="timeline-item">
+<h6>2026</h6>
+<p>Setting new benchmarks with smart construction and customer-first delivery.</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+<div class="container">
+<h2>Ready to Build Your Dream Project?</h2>
+<p style="color:#000;">Talk to our team today to explore design, budgeting, and sustainable build options for your next project.</p>
+<a href="#">Get Free Consultation</a>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+<div class="container">
+
+<div class="row g-5">
+
+<div class="col-lg-4">
+<h3 class="footer-logo">STEEL<span>CRAFT</span></h3>
+<p class="footer-text">
+Building strong and reliable structures across Chennai with 25+ years of excellence.
+</p>
+
+<div class="footer-social mt-3">
+<a href="#"><i class="bi bi-facebook"></i></a>
+<a href="#"><i class="bi bi-instagram"></i></a>
+<a href="#"><i class="bi bi-linkedin"></i></a>
+</div>
+</div>
+
+<div class="col-lg-3">
+<h5 class="footer-title">Quick Links</h5>
+<a href="#">Home</a>
+<a href="#">Services</a>
+<a href="#">Projects</a>
+<a href="#">Contact</a>
+</div>
+
+<div class="col-lg-2">
+<h5 class="footer-title">Services</h5>
+<a href="#">Residential</a>
+<a href="#">Commercial</a>
+<a href="#">Renovation</a>
+</div>
+
+<div class="col-lg-3">
+<h5 class="footer-title">Contact</h5>
+<p><i class="bi bi-geo-alt"></i> Chennai, India</p>
+<p><i class="bi bi-telephone"></i> +91 98765 43210</p>
+<p><i class="bi bi-envelope"></i> info@steelcraft.com</p>
+</div>
+
+</div>
+
+<hr class="footer-divider">
+
+<div class="footer-bottom">
+© 2025 SteelCraft Construction Pvt Ltd. All rights reserved.
+</div>
+
+</div>
+</footer>
 
 </body>
 </html>
